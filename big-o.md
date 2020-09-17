@@ -1,18 +1,32 @@
 # Big O Notation
 
-The definition below is from the Wikipedia article on [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation).
+Here is some motivation for understanding Big O from Gayle Laakmann McDowell:
+
+> Big O time is the language and metric we use to describe the efficiency of
+> algorithms. Not understanding it thoroughly can really hurt you in developing
+> an algorithm. Not only might you be judged harshly for not really understanding
+> big O, but you will also struggle to judge when your algorithm is getting faster
+> or slower. **Master this concept.**
+
+## What is Big O?
+
+The definition below is from the Wikipedia article on [big O notation](https://en.wikipedia.org/wiki/Big_O_notation).
 
 > In computer science, big O notation is used to classify algorithms according
 > to how their run time or space requirements grow as the input size grows.
 
 In my university degree, this type of notation was also referred to as "asymptotic notation".
 For the purposes of runtime analysis in competitive programming and interviews,
-Big O is used to describe the worst case scenario for solutions.
+big O is used to describe the worst case scenario for solutions.
 
 Big O is used to classify algorithms using what is called "[computational complexity theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)".
 What is most commonly used to describe an algorithm is its "[time complexity](https://en.wikipedia.org/wiki/Time_complexity)",
 which is the computational complexity that describes the amount of time it takes
 to run an algorithm.
+
+Here is an excellent graph of runtime complexity created by [Big-O Cheat Sheet](https://www.bigocheatsheet.com/):
+
+![Big O Graph](big-o-graph.png)
 
 ## Four Simple Rules
 
@@ -113,8 +127,8 @@ in `O(n + n^2)` time, but if we compare this runtime:
 `O(n^2) <= O(n + n^2) <= O(n^2 + n^2)`
 
 > Based off Rule 2 (drop constants), `O(n^2 + n^2) = O(2n^2)` which reduces to
->`O(n^2)`. Since the left and right of the comparison are equivalent, then the
->center must be as well: `O(n^2) <= O(n + n^2) <= O(n^2) -> O(n^2)`
+> `O(n^2)`. Since the left and right of the comparison are equivalent, then the
+> center must be as well: `O(n^2) <= O(n + n^2) <= O(n^2) -> O(n^2)`
 
 We can reduce this algorithm's runtime down to `O(n^2)`, hence
 **dropping the non-dominant term** `n`, because `n^2` dominates how the runtime

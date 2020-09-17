@@ -32,5 +32,6 @@ coding interviews.
 
 - [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
 - [Time complexity](https://en.wikipedia.org/wiki/Time_complexity)
+- [Space complexity](https://en.wikipedia.org/wiki/Space_complexity)
 - [In-place](https://en.wikipedia.org/wiki/In-place_algorithm)
 - [Brute-force search](https://en.wikipedia.org/wiki/Brute-force_search)

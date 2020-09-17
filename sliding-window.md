@@ -4,7 +4,7 @@ In many problems dealing with an array (or a LinkedList), we are asked to find
 or calculate something among all the contiguous subarrays (or sublists) of a
 given size. For an example:
 
-**_Given an array, find the average of all contiguous subarrays of size ‘K’ in it._**
+**_Given an array, find the average of all contiguous subarrays of size `K` in it._**
 
 A **brute-force** approach would be:
 
@@ -18,7 +18,7 @@ A **brute-force** approach would be:
 function getAveragesOfSubarrays(K, arrayOfNumbers) {
   const result = [];
   for (let i = 0; i <= arrayOfNumbers.length - K; i++) {
-    sum = 0.0;
+    let sum = 0.0;
     for (let j = i; j < i + K; j++) {
       sum += arrayOfNumbers[j];
     }
@@ -61,7 +61,7 @@ function getAveragesOfSubarrays(K, arrayOfNumbers) {
   }
 
   return result;
-}13-7
+}
 ```
 
 Now that we don't have to go through every subarray (of size K) to find the sum,

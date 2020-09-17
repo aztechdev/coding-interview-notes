@@ -14,12 +14,15 @@ What is most commonly used to describe an algorithm is its "[time complexity](ht
 which is the computational complexity that describes the amount of time it takes
 to run an algorithm.
 
+## Four Simple Rules
+
 In a [video with Gayle Laakmann McDowell](https://youtu.be/v4cd1O4zkGw), she
 provides four simple rules when trying to figure out an algorithm's time complexity:
 
-Rule 1: **Different steps get added**. For example, if you have one step that takes
-`O(a)` time and a second step that takes `O(b)` time, the full algorithm would be
-`O(a+b)`:
+### Rule 1: Different steps get added
+
+For example, if you have one step that takes `O(a)` time and a second step that
+takes `O(b)` time, the full algorithm would be `O(a+b)`:
 
 ```js
 function something() {
@@ -28,9 +31,11 @@ function something() {
 }
 ```
 
-Rule 2: **Drop constants**. In the below example, one algorithm finds the min
-element in an array, then the max element. The second algorithm finds both simultaneously.
-These are both described as `O(n)` where `n` is the length of the array:
+### Rule 2: Drop constants
+
+In the below example, one algorithm finds the min element in an array, then the
+max element. The second algorithm finds both simultaneously. These are both
+described as `O(n)` where `n` is the length of the array:
 
 ```js
 function minMax1(array) {
@@ -57,8 +62,60 @@ function minMax2(array) {
 ```
 
 How is the `minMax1` function `O(n)`? To add up the runtime, `O(n) + O(n) = O(2n)`,
-but we drop the constant (`2` in this case) to get `O(n)` because we are looking
+but we **drop the constant** (`2` in this case) to get `O(n)` because we are looking
 for how the algorithm scales roughly (_i.e._ is it linear? Is it quadratic?).
 
-<!-- TODO: -->
-Rule 3: TODO (I gotta go to sleep)
+### Rule 3: If you have different inputs, you'll use different variables to represent them
+
+For example, it would be a mistake to say the algorithm below is `O(n^2)`:
+
+```js
+function intersectionSize(arrayA, arrayB) {
+  let count = 0;
+  for (let i=0; i < arrayA.length; i++) {
+    for (let j=0; j < arrayB.length; j++) {
+      if (arrayA[i] === arrayB[j]) {
+        count += 1;
+      }
+    }
+  }
+}
+```
+
+`n` cannot be used to describe the length of an array if there are two different
+arrays. Instead, if we let `a` be the length of `arrayA` and `b` be the length
+of `arrayB`, this algorithm would run in `O(a*b)`.
+
+### Rule 4: Drop non-dominant terms
+
+In the algorithm below, we have a part of it that runs in `O(n)` and another
+that runs in `O(n^2)`, where `n` is the length of the array:
+
+```js
+function whyWouldIDoThis(array) {
+  let max = null;
+  for (let i=0; i < array.length; i++) { // O(n)
+    max = Math.max(array[i], max);
+  }
+  console.log(max);
+  // O(n) * O(n) = O(n*n) = O(n^2)
+  for (let i=0; i < array.length; i++) { // O(n)
+    for (let j=0; j < array.length; j++) { // O(n)
+      console.log(array[i], array[j]);
+    }
+  }
+}
+```
+
+As a first "non-simplified form" we _could_ describe this algorithm as running
+in `O(n + n^2)` time, but if we compare this runtime:
+
+`O(n^2) <= O(n + n^2) <= O(n^2 + n^2)`
+
+> Based off Rule 2 (drop constants), `O(n^2 + n^2) = O(2n^2)` which reduces to
+>`O(n^2)`. Since the left and right of the comparison are equivalent, then the
+>center must be as well: `O(n^2) <= O(n + n^2) <= O(n^2) -> O(n^2)`
+
+We can reduce this algorithm's runtime down to `O(n^2)`, hence
+**dropping the non-dominant term** `n`, because `n^2` dominates how the runtime
+changes. Therefore, `O(n + n^2) -> O(n^2)`.

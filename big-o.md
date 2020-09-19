@@ -133,3 +133,70 @@ in `O(n + n^2)` time, but if we compare this runtime:
 We can reduce this algorithm's runtime down to `O(n^2)`, hence
 **dropping the non-dominant term** `n`, because `n^2` dominates how the runtime
 changes. Therefore, `O(n + n^2) -> O(n^2)`.
+
+## Confusion on Whether to Add or Multiply Runtimes
+
+This is a common one to get tripped up on when you're dealing with an algorithm
+that has multiple steps.
+
+```java
+// O(a+b)
+for (int a : arrA) {
+  print(a);
+}
+
+for (int b : arrB) {
+  print(b);
+}
+```
+
+```java
+// O(a*b)
+for (int a : arrA) {
+  for (int b : arrB) {
+    print(a + "," + b);
+  }
+}
+```
+
+**Add the Runtimes `O(a+b)`** | **Multiply the Runtimes `O(a*b)`**
+--- | ---
+We do `a` chunks of work then `b` chunks of work. | We do `b` chunks of work for each element in `arrA`
+"fo this, then, when you're all done, do that" | "do this for each time you do that"
+
+## `O(log n)` Runtimes
+
+A good example of logarithmic time complexity is finding an item in a sorted
+array with a binary search or a balanced search tree. In binary search, we are
+looking for an element `k` in an array of `n` elements. We first compare `k` to
+the midpoint in the array. If `k` is equal to the middle element, we are done,
+but otherwise we go to the left half of the array if `k < middle` and to the
+right half if `k > middle`.
+
+We start out with `n` elements to search, then this becomes `n/2` elements, then
+`n/4` elements, and so on. When you see a problem where the number of elements
+being iterated through is halved each step, this is likely a `O(log n)` runtime.
+
+## Recursive Runtimes
+
+As an example, many people (including myself) would wrongly say that the below
+code runs in `O(n^2)`:
+
+```js
+function recursiveFunction(n) {
+  if (n <= 0) {
+    return 1;
+  }
+  return recursiveFunction(n - 1) + recursiveFunction(n - 1);
+}
+```
+
+If we call `recursiveFunction(4)`, this calls `recursiveFunction(3)` twice. Each
+of those calls to `recursiveFunction(3)` call `recursiveFunction(2)` twice, until
+we reach `recursiveFunction(1)`.
+
+The call tree will have a depth of `n`. Each node/function call has two children.
+Therefore, each level of the call tree will have twice as many calls as the one
+above it. Often, the runtime will look like `O(branches ^ depth)`, where `branches`
+is the number of times each recursive call branches out. In this specific case,
+we have a runtime of `O(2^n)`.

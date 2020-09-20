@@ -177,6 +177,36 @@ We start out with `n` elements to search, then this becomes `n/2` elements, then
 `n/4` elements, and so on. When you see a problem where the number of elements
 being iterated through is halved each step, this is likely a `O(log n)` runtime.
 
+### Example of `O(n log n)` runtime
+
+A great example of this runtime is **merge sort** on an unsorted array of items,
+where `n` is the length of the array.
+
+The first part of merge sort is to divide up the array into equal sized subarrays.
+After the first pass, the array will be sorted into sections of length `n/2`.
+After the second pass, length `n/4`. Then `n/8`, `n/16`, and so on until we have
+sections of size `1`. Since the number of elements being iterated through is
+halved at each step, this is a logarithmic runtime, or `log(n)`.
+
+Since we cannot split up a subarray of size `1`, this is where the merge step
+begins. If you can imagine the steps of making subarrays as levels in a balanced
+binary tree, in an array of length `8`, we'd have `3` levels. This is because `log(8) = 3`.
+
+```bash
+       [x,x,x,x,x,x,x,x]
+         /          \
+   [x,x,x,x]      [x,x,x,x] // level 1
+    /     \         /   \
+  [x,x]  [x,x]   [x,x]  [x,x] // level 2
+  / \     / \     / \    / \
+[x] [x] [x] [x] [x] [x] [x] [x] // level 3
+```
+
+The merge step at level 3 would take two operations each, so `(1 + 1) + (1 + 1) + (1 + 1) + (1 + 1)` operations, so `8` in total.
+The merge step at level 2 would take four operations each, so `(2 + 2) + (2 + 2)`. At level 1 it's `4 + 4`. So at each level it's `8` operations per level, or `n` operations per level.
+
+Since the number of levels is `log(n)` and we are performing `n` operations at each level (_i.e._ `n * log(n)`), the runtime is `O(n log n)`.
+
 ## Recursive Runtimes
 
 As an example, many people (including myself) would wrongly say that the below
@@ -200,3 +230,30 @@ Therefore, each level of the call tree will have twice as many calls as the one
 above it. Often, the runtime will look like `O(branches ^ depth)`, where `branches`
 is the number of times each recursive call branches out. In this specific case,
 we have a runtime of `O(2^n)`.
+
+### Example of `O(n!)` runtime
+
+Factorial runtimes are the absolute worst and you should try to avoid them at all
+cost. What do they look like?
+
+```js
+function allStringPermutations(string, prefix) {
+  if (string.length === 0) {
+    console.log(prefix);
+  } else {
+    for (let i=0; i < string.length; i++) {
+      let remainingString = string.substring(0, i) + string.substring(i + 1);
+      allStringPermutations(remainingString, prefix + string.charAt(i));
+    }
+  }
+}
+
+allStringPermutations('hello world', '');
+```
+
+This code prints out every permutation of a given string, so the runtime is based
+off the number of permutations of the given string. If the string is three characters
+long, there are three choices for the first character, two for the second, and one
+for the final character. The number of permutations would be `3 * 2 * 1` which is
+`3!`. Therefore, if `n` is the length/number of characters of the given string,
+the runtime would be `O(n!)`.

@@ -32,6 +32,9 @@ coding interviews.
 
 - [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
 - [Time complexity](https://en.wikipedia.org/wiki/Time_complexity)
+- [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
 - [Space complexity](https://en.wikipedia.org/wiki/Space_complexity)
 - [In-place](https://en.wikipedia.org/wiki/In-place_algorithm)
 - [Brute-force search](https://en.wikipedia.org/wiki/Brute-force_search)
+- [Divide-and-conquer algorithm](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)
+- [Mathematical induction](https://en.wikipedia.org/wiki/Mathematical_induction)

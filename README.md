@@ -29,6 +29,7 @@ the approach taken in [Grokking the Coding Interview](https://www.educative.io/c
 by [DesignGurus](https://www.designgurus.org/).
 
 - [The Sliding Window Pattern](./sliding-window.md)
+- [The Two Pointers Pattern](./two-pointers.md)
 
 ## Cracking the Coding Interview
 

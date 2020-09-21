@@ -46,6 +46,17 @@ Access | Search | Insert | Delete | Space
 --- | --- | --- | --- | ---
 `O(n)` | `O(n)` | `O(1)` | `O(1)` | `O(n)`
 
+## Queues
+
+> Type: linear data structure, sequential collection ([Queue - Wikipedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)))
+
+A queue is a type of collection where the only operations on the collection are
+adding entries to the from of the collection (enqueue), and removing entries from
+the end of the collection (dequeue). This makes the queue a First-In-First-Out (FIFO)
+data structure. The first element added to a queue will be the first removed.
+
+> This data structure is also related to BFS
+
 <!-- - Trees, Tries, & Graphs
 - Stacks & Queues
 - Heaps

@@ -43,6 +43,8 @@ coding interviews.
 
 ## Terminology
 
+### Algorithms & Data Structures
+
 - [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
 - [Time complexity](https://en.wikipedia.org/wiki/Time_complexity)
 - [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
@@ -55,3 +57,52 @@ coding interviews.
 - [List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 - [Search data structure](https://en.wikipedia.org/wiki/Search_data_structure)
 - [List of terms relating to algorithms and data structures](https://en.wikipedia.org/wiki/List_of_terms_relating_to_algorithms_and_data_structures)
+
+### Software Engineering
+
+- [Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
+  - [_Design Patterns_ - Gang of Four](https://en.wikipedia.org/wiki/Design_Patterns)
+  - [WikiWikiWeb](https://wiki.c2.com/?WelcomeVisitors)
+  - [React in Patters](https://github.com/krasimir/react-in-patterns)
+  - [JavaScript Design Patterns - Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+- [Software development process/life cycle](https://en.wikipedia.org/wiki/Software_development_process)
+  - [Extreme programming](https://en.wikipedia.org/wiki/Extreme_programming)
+  - [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))
+
+#### Databases
+
+- [Database model/paradigm](https://en.wikipedia.org/wiki/Database_model)
+  - [Key-value](https://en.wikipedia.org/wiki/Key%E2%80%93value_database)
+    - [Redis](https://redis.io/)
+    - [Memcached](https://memcached.org/)
+  - [Wide Column](https://en.wikipedia.org/wiki/Wide-column_store)
+    - [Apache Cassandra](https://cassandra.apache.org/)
+    - [Apache HBase](https://hbase.apache.org/)
+  - [Document-oriented](https://en.wikipedia.org/wiki/Document-oriented_database)
+    - [mongoDB](https://www.mongodb.com/)
+    - [Firestore](https://firebase.google.com/docs/firestore/)
+  - [Relational](https://en.wikipedia.org/wiki/Relational_model)
+    - [PostgreSQL](https://www.postgresql.org/)
+    - [MySQL](https://www.mysql.com/)
+  - [Graph](https://en.wikipedia.org/wiki/Graph_database)
+    - [Neo4j](https://neo4j.com/)
+    - [Dgraph](https://dgraph.io/)
+  - [Full-text Search Engine](https://en.wikipedia.org/wiki/Full-text_search)
+    - [Apache Lucene](https://lucene.apache.org/)
+    - [Apache Solr](https://lucene.apache.org/solr/)
+    - [Elastic Search](https://www.elastic.co/)
+    - [algolia](https://www.algolia.com/products/search/)
+    - [MeiliSearch](https://www.meilisearch.com/)
+  - [Multi-model](https://en.wikipedia.org/wiki/Multi-model_database)
+    - [FaunaDB](https://fauna.com/)
+  - [Data warehouse](https://en.wikipedia.org/wiki/Data_warehouse)
+    - [BigQuery](https://cloud.google.com/bigquery/)
+  - [Time series](https://en.wikipedia.org/wiki/Time_series_database)
+    - [InfluxDB](https://en.wikipedia.org/wiki/Time_series_database)
+- [Query language](https://en.wikipedia.org/wiki/Query_language)
+  - [GraphQL](https://graphql.org/)
+  - [SQL](https://en.wikipedia.org/wiki/SQL)
+- [Object-relational mapping](https://en.wikipedia.org/wiki/Object-relational_mapping)
+  - [Sequelize](https://sequelize.org/)
+  - [TypeORM](https://typeorm.io/#/)
+  - [Prisma](https://www.prisma.io/)

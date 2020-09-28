@@ -30,6 +30,9 @@ by [DesignGurus](https://www.designgurus.org/).
 
 - [The Sliding Window Pattern](./sliding-window.md)
 - [The Two Pointers Pattern](./two-pointers.md)
+- [The Fast & Slow Pointers Pattern](./fast-and-slow-pointers.md)
+- [Breadth First Search](./tree-bfs.md)
+- [Depth First Search](./tree-dfs.md)
 
 ## Cracking the Coding Interview
 
@@ -58,6 +61,32 @@ coding interviews.
 - [Search data structure](https://en.wikipedia.org/wiki/Search_data_structure)
 - [List of terms relating to algorithms and data structures](https://en.wikipedia.org/wiki/List_of_terms_relating_to_algorithms_and_data_structures)
 
+### Programming Languages
+
+- [Programming paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
+  - [Imperative](https://en.wikipedia.org/wiki/Imperative_programming)
+  - [Declarative](https://en.wikipedia.org/wiki/Declarative_programming)
+  - [Object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming)
+    - [Inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming))
+    - [Composition](https://en.wikipedia.org/wiki/Object_composition)
+    - [Class-based](https://en.wikipedia.org/wiki/Class-based_programming)
+      - [Factory](https://en.wikipedia.org/wiki/Factory_%28object-oriented_programming%29)
+    - [Prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming)
+  - [Concurrent](https://en.wikipedia.org/wiki/Concurrent_computing)
+    - [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))
+  - [Parallel](https://en.wikipedia.org/wiki/Parallel_computing)
+- [Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science))
+  - [Generic programming](https://en.wikipedia.org/wiki/Generic_programming)
+- [First-class citizen](https://en.wikipedia.org/wiki/First-class_citizen)
+  - [First-class function](https://en.wikipedia.org/wiki/First-class_function)
+- [Higher-order function](https://en.wikipedia.org/wiki/Higher-order_function)
+- [Nested function](https://en.wikipedia.org/wiki/Nested_function)
+  - [Anonymous function](https://en.wikipedia.org/wiki/Anonymous_function)
+- [Non-local variable](https://en.wikipedia.org/wiki/Non-local_variable)
+  - [Closure](https://en.wikipedia.org/wiki/Closure_(computer_programming))
+  - [Partial application](https://en.wikipedia.org/wiki/Partial_application)
+- [Currying](https://en.wikipedia.org/wiki/Currying)
+
 ### Software Engineering
 
 - [Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
@@ -65,9 +94,13 @@ coding interviews.
   - [WikiWikiWeb](https://wiki.c2.com/?WelcomeVisitors)
   - [React in Patters](https://github.com/krasimir/react-in-patterns)
   - [JavaScript Design Patterns - Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+  - [Creational Pattern](https://en.wikipedia.org/wiki/Creational_pattern)
+    - [Factory method](https://en.wikipedia.org/wiki/Factory_method_pattern)
 - [Software development process/life cycle](https://en.wikipedia.org/wiki/Software_development_process)
   - [Extreme programming](https://en.wikipedia.org/wiki/Extreme_programming)
   - [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))
+- [Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
+  - [Composition vs Inheritance in React](https://reactjs.org/docs/composition-vs-inheritance.html)
 
 #### Databases
 

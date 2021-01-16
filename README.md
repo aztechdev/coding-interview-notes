@@ -65,13 +65,14 @@ coding interviews.
 
 - [Programming paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
   - [Imperative](https://en.wikipedia.org/wiki/Imperative_programming)
+    - [Object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming)
+      - [Inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming))
+      - [Composition](https://en.wikipedia.org/wiki/Object_composition)
+      - [Class-based](https://en.wikipedia.org/wiki/Class-based_programming)
+        - [Factory](https://en.wikipedia.org/wiki/Factory_%28object-oriented_programming%29)
+      - [Prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming)
   - [Declarative](https://en.wikipedia.org/wiki/Declarative_programming)
-  - [Object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming)
-    - [Inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming))
-    - [Composition](https://en.wikipedia.org/wiki/Object_composition)
-    - [Class-based](https://en.wikipedia.org/wiki/Class-based_programming)
-      - [Factory](https://en.wikipedia.org/wiki/Factory_%28object-oriented_programming%29)
-    - [Prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming)
+    - [Functional](https://en.wikipedia.org/wiki/Functional_programming)
   - [Concurrent](https://en.wikipedia.org/wiki/Concurrent_computing)
     - [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))
   - [Parallel](https://en.wikipedia.org/wiki/Parallel_computing)
@@ -89,6 +90,7 @@ coding interviews.
 
 ### Software Engineering
 
+- [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
 - [Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
   - [_Design Patterns_ - Gang of Four](https://en.wikipedia.org/wiki/Design_Patterns)
   - [WikiWikiWeb](https://wiki.c2.com/?WelcomeVisitors)
@@ -101,6 +103,12 @@ coding interviews.
   - [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))
 - [Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
   - [Composition vs Inheritance in React](https://reactjs.org/docs/composition-vs-inheritance.html)
+- [Coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
+- [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration)
+- [Continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery)
+- [Interface](https://en.wikipedia.org/wiki/Interface_(computing))
+- [Software as a service (SaaS)](https://en.wikipedia.org/wiki/Software_as_a_service)
+- [Reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy)
 
 #### Databases
 
